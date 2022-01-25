@@ -42,7 +42,6 @@ module type PLAYABLE = sig
   type t
   val make : string -> t
   val name : t -> string
-  val abilities : t -> Abilities.t
 end
 
 
