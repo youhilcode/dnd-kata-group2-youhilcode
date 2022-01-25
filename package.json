@@ -1,0 +1,17 @@
+{
+  "name": "dnd-kata",
+  "version": "0.0.1",
+  "description": "New OCaml project",
+  "license": "MPL-2.0",
+  "scripts": { "start": "esy x dnd" },
+  "dependencies": { "ocaml": ">=4.12", "@opam/dune": "*" },
+  "devDependencies": {
+    "@opam/ocaml-lsp-server": "1.9.1",
+    "@opam/ocamlformat": "0.20.1",
+    "@opam/ocamlformat-rpc": "0.20.1"
+  },
+  "esy": {
+    "build": "dune build -p #{self.name}",
+    "release": { "releasedBinaries": [ "dnd" ] }
+  }
+}

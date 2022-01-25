@@ -1,0 +1,6 @@
+(executable
+ (name dnd_app)
+ (public_name dnd)
+ (libraries dnd-kata.lib)
+ (ocamlc_flags
+  (:standard -warn-error -a+31+8)))
